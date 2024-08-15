@@ -36,6 +36,8 @@
 
 **P.S.: There was no problem with the conda environment creation process using `windows WSL ubuntu`. But, `ubuntu OS` and `pop OS` may require the installation of some libraries used by certain dependencies. That was my experience with the environment creation process.**
 
+**PS. 2: Windows is NOT an option for using wrench. According to reddit users, the package `faiss-gpu` (a dependency of wrench) requires Linux. To use it on Windows, you must use `windows WSL`.**
+
 ## Download datasets:
 
 ```python
