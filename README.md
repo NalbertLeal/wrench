@@ -25,8 +25,15 @@
 2. Clone this repository.
 3. Navigate to the folder of the cloned repository on your computer.
 4. Run the following command to create the conda environment:
+    
+    CPU enviroment:
     ```bash
     $ conda env create -f environment.yml
+    ```
+
+    GPU enviroment:
+    ```bash
+    $ conda env create -f environment_gpu.yml
     ```
 5. Start the environment:
     ```bash
