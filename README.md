@@ -45,6 +45,45 @@
 
 **PS. 2: Windows is NOT an option for using wrench. According to reddit users, the package `faiss-gpu` (a dependency of wrench) requires Linux. To use it on Windows, you must use `windows WSL`.**
 
+**PS. 3: If on ubuntu you have some problem related to _libssl.so.10_ or _libcrypto.so.10_ follow the steps described in the section _Installing ubuntu libs_**
+
+**PS. 4: If you have any problem with lib _transformers_ uninstall with the command _pip uninstall transformers_ and reinstall directly from the official git repository with _pip install git+https://github.com/huggingface/transformers_**
+
+## Installing ubuntu libs
+
+Some libs may be required to run wrench using ubuntu, if you have problems with _libssl.so.10_ or _libcrypto.so.10_ try the steps below to install the librarys:
+
+**libssl.so.10**:
+
+1. Install the libssl:
+
+```bash
+$ sudo apt-get update
+$ sudo apt install libssl-dev
+```
+
+2.  Now rename the libary
+
+```bash
+$ cd /lib/x86_64-linux-gnu
+$ sudo ln -s libssl.so libssl.so.10
+``` 
+**libcrypto.so.10**:
+
+1. Install the libcrypto:
+
+```bash
+$ sudo apt-get update
+$ sudo apt install libcrypto-dev
+```
+
+2.  Now rename the libary
+
+```bash
+$ cd /lib/x86_64-linux-gnu
+$ sudo ln -s libcrypto.so libcrypto.so.10
+``` 
+
 ## Download datasets:
 
 ```python
