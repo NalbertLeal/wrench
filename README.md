@@ -47,7 +47,16 @@
 
 **PS. 3: If on ubuntu you have some problem related to _libssl.so.10_ or _libcrypto.so.10_ follow the steps described in the section _Installing ubuntu libs_**
 
-**PS. 4: If you have any problem with lib _transformers_ uninstall with the command _pip uninstall transformers_ and reinstall directly from the official git repository with _pip install git+https://github.com/huggingface/transformers_**
+**PS. 4: If you have any problem with lib _transformers_ uninstall with the command**
+
+```bash
+$ pip uninstall transformers
+```
+**and reinstall directly from the official git repository with the command bellow**
+
+```bash
+$ pip install git+https://github.com/huggingface/transformers
+```
 
 ## Installing ubuntu libs
 
